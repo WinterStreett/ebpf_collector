@@ -1,0 +1,1 @@
+/bin/c++  -g   CMakeFiles/ebpf_collector.dir/src/main.cpp.o CMakeFiles/ebpf_collector.dir/src/tools.cpp.o  -o ebpf_collector  -Wl,-rpath,/usr/local/lib /usr/local/lib/libprometheus-cpp-pull.so.1.3.0 /usr/local/lib/libprometheus-cpp-core.so.1.3.0 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/winter/ebpf_collector/src/main.cpp
+prometheus/exposer.h
+-
+prometheus/registry.h
+-
+prometheus/counter.h
+-
+memory
+-
+thread
+-
+

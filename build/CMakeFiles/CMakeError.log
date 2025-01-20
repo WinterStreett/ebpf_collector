@@ -1,0 +1,232 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_8f383/fast && /bin/make -f CMakeFiles/cmTC_8f383.dir/build.make CMakeFiles/cmTC_8f383.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8f383.dir/src.c.o
+/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8f383.dir/src.c.o   -c /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8f383
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f383.dir/link.txt --verbose=1
+/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_8f383.dir/src.c.o  -o cmTC_8f383 
+/bin/ld: CMakeFiles/cmTC_8f383.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8f383.dir/build.make:87：cmTC_8f383] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_8f383/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_9d90c/fast && /bin/make -f CMakeFiles/cmTC_9d90c.dir/build.make CMakeFiles/cmTC_9d90c.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9d90c.dir/CheckFunctionExists.c.o
+/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9d90c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9d90c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d90c.dir/link.txt --verbose=1
+/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9d90c.dir/CheckFunctionExists.c.o  -o cmTC_9d90c  -lpthreads 
+/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9d90c.dir/build.make:87：cmTC_9d90c] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_9d90c/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_8206d/fast && /bin/make -f CMakeFiles/cmTC_8206d.dir/build.make CMakeFiles/cmTC_8206d.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8206d.dir/src.c.o
+/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8206d.dir/src.c.o   -c /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8206d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8206d.dir/link.txt --verbose=1
+/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_8206d.dir/src.c.o  -o cmTC_8206d 
+/bin/ld: CMakeFiles/cmTC_8206d.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8206d.dir/build.make:87：cmTC_8206d] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_8206d/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_788cb/fast && /bin/make -f CMakeFiles/cmTC_788cb.dir/build.make CMakeFiles/cmTC_788cb.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_788cb.dir/CheckFunctionExists.c.o
+/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_788cb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_788cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_788cb.dir/link.txt --verbose=1
+/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_788cb.dir/CheckFunctionExists.c.o  -o cmTC_788cb  -lpthreads 
+/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_788cb.dir/build.make:87：cmTC_788cb] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_788cb/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_2d918/fast && /bin/make -f CMakeFiles/cmTC_2d918.dir/build.make CMakeFiles/cmTC_2d918.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2d918.dir/src.c.o
+/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2d918.dir/src.c.o   -c /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2d918
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d918.dir/link.txt --verbose=1
+/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_2d918.dir/src.c.o  -o cmTC_2d918 
+/bin/ld: CMakeFiles/cmTC_2d918.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2d918.dir/build.make:87：cmTC_2d918] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_2d918/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_4ba70/fast && /bin/make -f CMakeFiles/cmTC_4ba70.dir/build.make CMakeFiles/cmTC_4ba70.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4ba70.dir/CheckFunctionExists.c.o
+/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4ba70.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4ba70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ba70.dir/link.txt --verbose=1
+/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4ba70.dir/CheckFunctionExists.c.o  -o cmTC_4ba70  -lpthreads 
+/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4ba70.dir/build.make:87：cmTC_4ba70] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_4ba70/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_3b658/fast && /bin/make -f CMakeFiles/cmTC_3b658.dir/build.make CMakeFiles/cmTC_3b658.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3b658.dir/src.c.o
+/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3b658.dir/src.c.o   -c /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3b658
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b658.dir/link.txt --verbose=1
+/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_3b658.dir/src.c.o  -o cmTC_3b658 
+/bin/ld: CMakeFiles/cmTC_3b658.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3b658.dir/build.make:87：cmTC_3b658] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_3b658/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_e77db/fast && /bin/make -f CMakeFiles/cmTC_e77db.dir/build.make CMakeFiles/cmTC_e77db.dir/build
+make[1]: 进入目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e77db.dir/CheckFunctionExists.c.o
+/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e77db.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e77db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e77db.dir/link.txt --verbose=1
+/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e77db.dir/CheckFunctionExists.c.o  -o cmTC_e77db  -lpthreads 
+/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e77db.dir/build.make:87：cmTC_e77db] 错误 1
+make[1]: 离开目录“/home/winter/ebpf_collector/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_e77db/fast] 错误 2
+
+
+

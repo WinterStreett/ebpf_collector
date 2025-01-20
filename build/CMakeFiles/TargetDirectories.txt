@@ -1,0 +1,3 @@
+/home/winter/ebpf_collector/build/CMakeFiles/edit_cache.dir
+/home/winter/ebpf_collector/build/CMakeFiles/rebuild_cache.dir
+/home/winter/ebpf_collector/build/CMakeFiles/ebpf_collector.dir
